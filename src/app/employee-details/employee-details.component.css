@@ -1,0 +1,22 @@
+.view-employee-card {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+  }
+  
+  mat-list-item {
+    padding: 8px 0;
+  }
+  
+  .photo-container {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .photo-container img {
+    max-width: 100%;
+    max-height: 250px;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  

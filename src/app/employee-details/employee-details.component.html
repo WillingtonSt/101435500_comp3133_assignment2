@@ -1,0 +1,27 @@
+<mat-card class="view-employee-card">
+    <h2>Employee Details</h2>
+  
+    <mat-list *ngIf="employee">
+      <mat-list-item><strong>First Name:</strong> {{ employee.first_name }}</mat-list-item>
+      <mat-list-item><strong>Last Name:</strong> {{ employee.last_name }}</mat-list-item>
+      <mat-list-item><strong>Email:</strong> {{ employee.email }}</mat-list-item>
+      <mat-list-item><strong>Gender:</strong> {{ employee.gender }}</mat-list-item>
+      <mat-list-item><strong>Designation:</strong> {{ employee.designation }}</mat-list-item>
+      <mat-list-item><strong>Salary:</strong> {{ employee.salary | currency }}</mat-list-item>
+      <mat-list-item>
+        <strong>Date of Joining:</strong>
+        {{ employee.date_of_joining | date:'longDate' }}
+      </mat-list-item>
+      <mat-list-item><strong>Department:</strong> {{ employee.department }}</mat-list-item>
+    </mat-list>
+  
+    <div *ngIf="employee.employee_photo" class="photo-container">
+      <img [src]="employee.employee_photo" alt="Employee Photo" />
+    </div>
+  
+    <mat-spinner *ngIf="loading" diameter="40"></mat-spinner>
+    <mat-error *ngIf="error">{{ error }}</mat-error>
+  
+    <button mat-stroked-button color="primary" routerLink="/employee">Back to Employee List</button>
+  </mat-card>
+  

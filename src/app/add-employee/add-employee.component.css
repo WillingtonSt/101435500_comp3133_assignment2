@@ -1,0 +1,25 @@
+.employee-form-card {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+  }
+  
+  .full-width {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  
+  .file-input {
+    margin: 16px 0;
+  }
+  
+  .success {
+    color: green;
+    margin-top: 12px;
+  }
+  
+  mat-form-field {
+    position: relative;
+    z-index: 1;
+  }
+  
